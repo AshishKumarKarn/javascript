@@ -31,4 +31,4 @@ for (var i = 0; i < 3; i++) {
   })(i);
 }
 //note that all the execution will happen after 1 second
-//IFEE is an Immediately Invoked Function Expression, it is a function that is executed immediately after it is defined. It is used to create a new scope and avoid polluting the global scope. It can also be used to create a closure and maintain state.
+//IIFE is an Immediately Invoked Function Expression, it is a function that is executed immediately after it is defined. It is used to create a new scope and avoid polluting the global scope. It can also be used to create a closure and maintain state.
