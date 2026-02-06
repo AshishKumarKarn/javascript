@@ -3,6 +3,7 @@
 //has finished executing, those variables remain accessible to
 //the inner function. The is commonly used for data privacy,
 //maintaining state and function factories.
+
 function fun() {
   var i = 10;
   return function inner() {
