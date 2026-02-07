@@ -1,5 +1,6 @@
 //debouncing is a technique used to limit the rate at which a function can fire. It ensures that a function is only executed after a certain amount of time has passed since the last time it was invoked. This is particularly useful for scenarios like handling user input events, where you want to avoid executing a function too frequently.
 
+//Run AFTER the noise stops
 function debounce(fn, delay) {
   let timerId;
 
