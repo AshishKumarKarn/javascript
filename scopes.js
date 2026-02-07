@@ -32,3 +32,7 @@ for (var i = 0; i < 3; i++) {
 }
 //note that all the execution will happen after 1 second
 //IIFE is an Immediately Invoked Function Expression, it is a function that is executed immediately after it is defined. It is used to create a new scope and avoid polluting the global scope. It can also be used to create a closure and maintain state.
+
+//Hoisting
+// var is hoisted to the top of its scope and initialized with undefined,
+//while let and const are hoisted but not initialized. This means that if you try to access a variable declared with var before it is declared, it will return undefined, while if you try to access a variable declared with let or const before it is declared, it will throw a ReferenceError.
