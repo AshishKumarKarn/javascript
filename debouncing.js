@@ -28,3 +28,42 @@ debouncedSearch('Debouncing');
 debouncedSearch('Function Debouncing');
 
 // Only the last call will execute after 1500ms, printing: "Searching for: Function Debouncing"
+
+//practicing writing debounce on my own.
+
+function debounceEx(fun, delay){
+
+    let timerId;
+    return function (...args){
+        let context = this;
+        //clear timerId
+        if(timerId){
+            clearTimeout(timerId);
+        }
+        timerId = setTimeout(()=>{
+            fun.apply(context, args);
+        }, delay)
+
+    }
+}
+
+
+function debounceNew(fun, delay){
+    let timerId;
+    return function(...args){
+        let context = this;
+        if(timerId){
+            clearTimeout(timerId);
+        }
+        timerId = setTimeout(()=>{
+            fun.apply(context, args)
+        }, delay);
+    }
+}
+function toBeDebounced(){
+    console.log('to be logged');
+}
+let db =debounceNew(toBeDebounced, 3500);
+db();
+db();
+db();
